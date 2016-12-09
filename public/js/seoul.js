@@ -6,28 +6,9 @@ class App{
 
   {
         "id": 1,
-        "name": "Paris",
+        "name": "Seoul",
       
       },
-      {
-        "id": 2,
-        "name": "Hawaii",
-       
-      },
-      {
-        "id": 3,
-        "name": "Amsterdam",
-      },
-      {
-        "id": 4,
-        "name": "Seoul",
-       
-      },
-      {
-        "id": 5,
-        "name": "Nashville",
-      },
-       
     ];
       
   
@@ -105,8 +86,8 @@ class Component extends App{
 
 journeyDesignLayout(){
   let html = `
-  <right>
-  <div class="fixed-action-btn horizontal">
+   <right>
+   <div class="fixed-action-btn horizontal">
     <a class="btn-floating btn-large red">
       <i class="large material-icons">mode_edit</i>
     </a>
@@ -122,90 +103,35 @@ journeyDesignLayout(){
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center teal-text text-lighten-2">Adventure</h1>
+        <h1 class="header center teal-text text-lighten-2">Seoul</h1>
         <div class="row center">
-          <h5 class="header col s12 light">Start a journey to places you dream of.</h5>
+          <h5 class="header col s12 light">Start a journey and satisfy your soul</h5>
         </div>
         <br><br>
 
       </div>
     </div>
-    <div class="parallax"><img src="img/paris.jpg" alt="Unsplashed background img 1" style="display: block; transform: translate3d(-50%, 202px, 0px);"></div>
+    <div class="parallax"><img src="img/seoul.jpeg" alt="Unsplashed background img 1" style="display: block; transform: translate3d(-50%, 202px, 0px);"></div>
   </div>
     <div class="container">
     <div class="section">
 
       <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Be an Adventurer!</h5>
-            <ul id="slide-out" class="side-nav">
-      <div class="row">
-    <form class="col s12">
-    <h5 class="col s11">Sign In</h5>
-      <div class="row">
-        <div class="input-field col s5">
-          <input id="first_name" type="text" class="validate">
-          <label for="first_name">First Name</label>
-        </div>
-        <div class="input-field col s5">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
-        </div>
-      </div>
-      <div class="input-field inline">
-        <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
-          <label for="password">Password</label>
-        </div>
-      </div>
-      <div class="input-field inline">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
-        </div>
-        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-     
-    <i class="material-icons right">send</i>
-  </button>
-      </div>
-      
-
-    </form>
-  </div>
-        
+       <ul class="collapsible popout" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Introduction</div>
+      <div class="collapsible-body"><p>Seoul is the capital of Korea with over 600 years of history. It is the heart of Korea’s culture and education as well as politics and economics. Seoul is home to many old historic sites like Gyeongbokgung and Changdeokgung Palaces, and places of traditional culture like Bukchon Hanok Village, Insa-dong, and Namdaemun Market. </p></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Journey Location</div>
+      <div class="collapsible-body"><p><center> <img class="materialboxed" width="650" src="img/seoul3.png"></center></p></div>
+    </li>
   </ul>
-  <a href="#" data-activates="slide-out" class="button-collapse"><center><p class="waves-effect waves-light btn-large">Click Here</p></center></a>
-        
-          </div>
-        </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">Find Dream Buddies!</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
   </div>
   </div>
   <div class="parallax-container">
-    <div class="parallax"><img src="img/paris2.jpg" alt="Unsplashed background img 1" style="display: block; transform: translate3d(-50%, 202px, 0px);"></div>
+    <div class="parallax"><img src="img/seoul2.jpg" alt="Unsplashed background img 1" style="display: block; transform: translate3d(-50%, 202px, 0px);"></div>
   </div>
   <div class="container">
     <div class="section">
@@ -214,32 +140,7 @@ journeyDesignLayout(){
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <center>
-<a href="#!" class="material tooltipped" onclick="Materialize.showStaggeredList('#staggered-test'), Materialize.toast('Select A Place', 5000, 'rounded');" data-position="left" data-delay="50" data-tooltip="Let's Journey!">
-<img src="img/awyea.gif" height="120" width="110"> 
-  </a>
- <ul id="staggered-test">
-          <li class="" style="transform: translateX(0px); opacity: 0;">
-            <h4><a href="app.html">Paris</a></h4>
-            <p>City of Love</p>
-          </li>
-          <li class="" style="transform: translateX(0px); opacity: 0;">
-            <h4><a href="hawaii.html">Hawaii</a></h4>
-            <p>Be Calm and Relaxed</p>
-          </li>
-          <li class="" style="transform: translateX(0px); opacity: 0;">
-            <h4><a href="amster.html">Amsterdam</a></h4>
-            <p>City of Peace</p>
-          </li>
-          <li class="" style="transform: translateX(0px); opacity: 0;">
-            <h4><a href="seoul.html">Seoul</a></h4>
-            <p>Where souls are pleased</p>
-          </li>
-          <li class="" style="transform: translateX(0px); opacity: 0;">
-            <h4><a href="nashville.html">Nashville</a></h4>
-            <p>Happiness and Joy inside</p>
-          </li>
-        </ul>
- </a>
+<i class="large material-icons"><a href="app.html" class="material tooltipped" onclick="Materialize.showStaggeredList('#staggered-test'), Materialize.toast('Select A Place', 5000, 'rounded');" data-position="left" data-delay="50" data-tooltip="Return">replay</a></i>
  
   </center>
         </div>
@@ -254,7 +155,7 @@ journeyDesignLayout(){
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="img/paris1.jpg" alt="Unsplashed background img 3" style="display: block; transform: translate3d(-50%, 30px, 0px);"></div>
+    <div class="parallax"><img src="img/seoul1.jpg" alt="Unsplashed background img 3" style="display: block; transform: translate3d(-50%, 30px, 0px);"></div>
   </div>
   </div>
 
